@@ -7,36 +7,33 @@ html(lang="en")
     title Playground Foundation
     meta(name="description", content="")
   body
-    .nav_wrapper
-      .nav_logo
-        h1 Playground Foundation
-      nav.nav_main
-        a(href="#").link About Us
-        a(href="#").link Privacy
-        a(href="#").btn Sign In
-    section.content
-      .content_nav
-        .content_nav_heading
-          h5
-            | We are
-            br
-            | educational
-        .content_nav_list
-          a(href="#")#artLink Art
-          a(href="#")#workLink Works
-          a(href="#")#onlineLink Online
-          a(href="#")#collectionLink Collection
-        .content_nav_bottom
-          p Directed by playground
-      .content_slider
-        .content_slider_imgs
-          .content_slider_img_back
-            img(src=require("./img/art.jpg"))
-        .content_slider_texts
-          h5.content_slider_texts_info Playground interview
-          h4.content_slider_texts_name Benjamin Vnuk
-          h4.content_slider_texts_desc Muse magazine
-          h4.content_slider_texts_footer Curated by Arknet
-
-
-      
+    .nav
+      .nav__logo
+        h1 Playground
+      nav.nav__main
+        a(href="#").nav__item.nav__link About Us
+        a(href="#").nav__item.nav__link Privacy
+        a(href="#").nav__item.nav__btn Sign In
+    section
+      .content
+        .content__nav
+          .content__nav__heading
+            h5 We are
+            h5 educational
+          .content__nav__list
+            a(href="#")#artLink Art
+            a(href="#")#workLink Works
+            a(href="#")#onlineLink Online
+            a(href="#")#collectionLink Collection
+          .content__nav__bottom
+            p Directed by playground
+        .content__slider
+          img(src=require("./img/art.jpg"))
+        .content__texts
+          h5.content__texts__info Playground interview
+          h4.content__texts__name Benjamin Vnuk
+          h4.content__texts__desc Muse magazine
+          h4.content__texts__footer Curated by Arknet
+    footer
+      a(href="#") Subscribe for news
+      a(href="#") Be a partner
