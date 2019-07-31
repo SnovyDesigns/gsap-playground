@@ -25,10 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
     contentDesc = document.querySelector('.content__texts__desc'),
     contentFooter = document.querySelector('.content__texts__footer');
   let imgs = {
-    artImg: 'images/art.jpg',
-    workImg: 'images/work.jpg',
-    onlineImg: 'images/online.jpg',
-    collectionImg: 'images/collection.jpg'
+    artImg:
+      'https://images.unsplash.com/photo-1453814235491-3cfac3999928?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    workImg:
+      'https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
+    onlineImg:
+      'https://images.unsplash.com/photo-1511424323602-d3c1a4138056?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+    collectionImg:
+      'https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80'
   };
   let people = {
     art: {
