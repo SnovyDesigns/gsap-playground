@@ -4,5 +4,39 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title 
+    title Playground Foundation
     meta(name="description", content="")
+  body
+    .nav_wrapper
+      .nav_logo
+        h1 Playground Foundation
+      nav.nav_main
+        a(href="#").link About Us
+        a(href="#").link Privacy
+        a(href="#").btn Sign In
+    section.content
+      .content_nav
+        .content_nav_heading
+          h5
+            | We are
+            br
+            | educational
+        .content_nav_list
+          a(href="#")#artLink Art
+          a(href="#")#workLink Works
+          a(href="#")#onlineLink Online
+          a(href="#")#collectionLink Collection
+        .content_nav_bottom
+          p Directed by playground
+      .content_slider
+        .content_slider_imgs
+          .content_slider_img_back
+            img(src=require("./img/art.jpg"))
+        .content_slider_texts
+          h5.content_slider_texts_info Playground interview
+          h4.content_slider_texts_name Benjamin Vnuk
+          h4.content_slider_texts_desc Muse magazine
+          h4.content_slider_texts_footer Curated by Arknet
+
+
+      
