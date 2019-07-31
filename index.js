@@ -11,3 +11,11 @@ import './src/scss/main.scss';
 // ---------------------
 
 import './src/js/main';
+
+// ---------------------
+//     IMAGES
+// ---------------------
+
+import './src/img/work.jpg';
+import './src/img/online.jpg';
+import './src/img/collection.jpg';
