@@ -19,6 +19,11 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.letter {
+  display: inline;
+  margin-right: 0.1rem;
+}
+
 .nav {
   padding: 1rem 3rem;
   display: flex;
@@ -92,6 +97,7 @@ section {
     background-color: #f8360b;
     @include padd(3, 3, 4, 7);
     box-shadow: 0.4rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    z-index: 2;
 
     &__heading h5 {
       font-weight: 300;
@@ -111,17 +117,17 @@ section {
       @include marg(4, 8);
       display: flex;
       flex-direction: column;
+    }
 
-      a {
-        color: orange;
-        display: inline-block;
-        @include padd(1);
-        @include trans;
+    &__link {
+      color: orange;
+      display: inline-block;
+      @include padd(1);
+      @include trans;
 
-        &:hover {
-          color: #fff;
-        }
-      }
+      // &:hover {
+      //   color: #fff;
+      // }
     }
 
     &__bottom {
@@ -154,11 +160,13 @@ section {
   }
 
   &__texts {
+    @include size(36, 22);
     @include absolute(top 50% right 5%);
     transform: translateY(-50%);
     padding: 3rem 4rem;
     background: rgba($color: #fff, $alpha: 0.8);
     box-shadow: 0.4rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    z-index: 2;
 
     &__info {
       color: #555555;
@@ -191,12 +199,12 @@ section {
   }
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: flex-end;
   padding: 0 1rem;
 
-  a {
+  &__item {
     color: #555555;
     display: inline-block;
     padding: 1rem 2rem;
